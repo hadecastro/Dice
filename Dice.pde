@@ -6,19 +6,22 @@ void setup()
 }
 void draw()
 {
+	int sum = 0;
 	background(100);
 	for(int x = 10; x < 480; x = x + 70)
 	{
 		for(int y = 10; y < 480; y = y + 70)
 		{
 		Die die1 = new Die(x, y);
-		die1.show();	
+		die1.show();
+		sum = sum + die1.numDie;		
 		}
 	}
-	int total = 0;
+	textAlign(CENTER);
 	fill(0);
-	total = total + die1.value;
-	text(total, 250, 250);
+	textSize(48);
+	text(sum, 250, 250);
+
 }
 void mousePressed()
 {
