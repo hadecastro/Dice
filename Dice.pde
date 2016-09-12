@@ -1,7 +1,7 @@
 
 void setup()
 {
-	size(500, 500);
+	size(500, 600);
 	noLoop();
 }
 void draw()
@@ -17,10 +17,10 @@ void draw()
 		sum = sum + die1.numDie;		
 		}
 	}
-	textAlign(CENTER);
+	textAlign(CENTER, CENTER);
 	fill(0);
-	textSize(48);
-	text(sum, 250, 250);
+	textSize(100);
+	text(sum, 250, 530);
 
 }
 void mousePressed()
