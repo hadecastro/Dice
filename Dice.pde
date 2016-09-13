@@ -4,6 +4,7 @@ void setup()
 	size(800, 900);
 	noLoop();
 }
+
 void draw()
 {
 	int sum = 0;
@@ -17,6 +18,7 @@ void draw()
 		sum = sum + die1.numDie;		
 		}
 	}
+
 	textAlign(CENTER, CENTER);
 	fill(0);
 	textSize(90);
@@ -40,6 +42,7 @@ class Die //models one single dice cube
 		myY = y;
 		roll();
 	}
+
 	void roll()
 	{
 		//your code here
