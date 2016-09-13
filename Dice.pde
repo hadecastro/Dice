@@ -1,16 +1,16 @@
 
 void setup()
 {
-	size(500, 600);
+	size(800, 900);
 	noLoop();
 }
 void draw()
 {
 	int sum = 0;
 	background(100);
-	for(int x = 10; x < 480; x = x + 70)
+	for(int x = 20; x < 780; x = x + 70)
 	{
-		for(int y = 10; y < 480; y = y + 70)
+		for(int y = 10; y < 780; y = y + 70)
 		{
 		Die die1 = new Die(x, y);
 		die1.show();
@@ -19,14 +19,15 @@ void draw()
 	}
 	textAlign(CENTER, CENTER);
 	fill(0);
-	textSize(100);
-	text(sum, 250, 530);
-
+	textSize(90);
+	text("Total: " + sum, 400, 830);
 }
+
 void mousePressed()
 {
 	redraw();
 }
+
 class Die //models one single dice cube
 {
 	//variable declarations here
