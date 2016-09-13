@@ -27,6 +27,7 @@ void draw()
 
 void mousePressed()
 {
+
 	redraw();
 }
 
@@ -56,7 +57,7 @@ class Die //models one single dice cube
 		rect(myX, myY, 60, 60, 10);
 		if(numDie == 1)
 		{
-			fill((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
+			fill((int)(Math.random()*256)+1, (int)(Math.random()*256)+1, (int)(Math.random()*256)+1);
 			ellipse(myX + 30, myY + 30, 10, 10);
 		}
 
